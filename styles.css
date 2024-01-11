@@ -50,7 +50,7 @@ section {
 hr {
 	width: 250px;
 	height: 3px;
-	background-color:#ffd95e;
+	background-color:#00244E;
 	border: 0;
 	margin-bottom: 50px;
 }
@@ -79,31 +79,31 @@ section p {
 header {
 	/*position: absolute;*/
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: 20px 10px;
-	color: #000;
-	background-color: #FFD95E;
+	color: #fff;
+	background-color: #00244E;
 }
 
 header a{
 	margin:0 10px;
+	color: #fff;
 }
 
 header h2 {
 	font-family: "Quicksand", sans-serif;
-	color:#ff1a1a;
-	font-weight: 1000;
+	color: #fff;
+	font-weight: 10000;
+	font-size:25px;
 }
 
 header nav {
 	display: flex;
-	margin-right: -15px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 header nav li {
-	margin: 0 15px;
+	margin: 0 2px;
 }
 
 header img{
@@ -114,39 +114,48 @@ header img{
 @media (max-width: 800px) {
 	header {
 		padding: 20px 10px;
+	}
+
+	header nav{
 		flex-direction: column;
 	}
 
 	header h2 {
-		margin-bottom: 15px;
-		font-size: 20px;
+		font-size: 25px;
 	}
 
 	header nav li {
-		margin: 0 5px;
-		font-size: 15px;
+		margin: 10px 5px;
+		font-size: 20px;
 	}
 }
 
 /*Hero Styles*/
 
 .hero {
-	/*position: relative;*/
-	display:flex;
+	position:relative;
+	top:0;
+	left: 0;
 	justify-content: center;
 	text-align: center;
-	min-height: 80vh;
-	color: #000;
+	align-items: center;
+	min-height: 100vh;
+	color: #fff;
+	background: #00244E;
+	background-position: 50% 50%;
+	z-index: -2;
 }
 
 .hero .background-image {
-	position: absolute;
-	top: 0;
-	left: 0;
+	position:absolute;
+	top:0;
+	left:0;
 	width: 100%;
-	height: 50%;
+	height: auto;
 	background-size: cover;
+	background-position: 50% 50%;
 	z-index: -1;
+    margin-bottom: 40px;
 }
 
 .hero h1 {
@@ -162,13 +171,14 @@ header img{
 .hero a.btn {
 	margin: 10px;
 	padding: 20px 46px;
-	background-color: #FFD95E;
+	background-color: #fff;
 }
 
 .hero-content-area {
 	opacity: 0;
-	margin-top: 70px;
+	margin-top: 0px;
 	animation: 1s slidefade 1s forwards;
+	width: 100%;
 }
 
 .hero-content-area img{
@@ -186,7 +196,16 @@ header img{
 
 @media (max-width: 800px) {
 	.hero {
-		min-height: 490px;
+		min-height: 90vh;
+	}
+
+	.hero .background-image{
+		background-position: 50% 50%;
+	}
+
+	.hero img{
+      width: auto;
+	  height: 450px;
 	}
 
 	.hero h1 {
@@ -200,11 +219,6 @@ header img{
 	.hero a.btn {
 		margin: 20px;
 		padding: 20px 20px;
-	}
-
-	.hero .background-image{
-		background-size: cover;
-		background-position:center;
 	}
 }
 
@@ -236,7 +250,7 @@ header img{
 }
 
 .testimonials div{
-	color:#FFD95E;
+	color:#00244E;
 	flex-basis:30%;
 	margin-bottom: 20px;
 	margin: 20px auto;
@@ -285,7 +299,7 @@ header img{
 
 footer{
 	padding:0 20px;
-	background-color: #FFD95E;
+	background-color: #fff;
 	padding-top:20px;
 }
 
@@ -298,14 +312,14 @@ footer img{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-    background-color: #FFD95E;
+    background-color: #fff;
 	color: #000;
 	padding: 5px 0;
 }
 
 .footergrid div{
 	flex-basis: 30%;
-	background-color: #FFD95E;
+	background-color: #fff;
 	text-align:left;
 }
 
@@ -438,7 +452,7 @@ img {
 .caption-container {
   align-items: center;
   text-align: center;
-  background-color: #FFD95E;
+  background-color: #00244E;
   padding: 2px 16px;
   color: #000;
 }
@@ -471,7 +485,7 @@ img {
 /*menu**************************************************************/
 
 #menu{
-	background-color:#7F6161;
+	background-color:#00244E;
 }
 
 .fullmenu{
@@ -525,7 +539,7 @@ img {
 
 #location{
 	background-color: #000;
-	color: #FFD95E;
+	color: #00244E;
 }
 
 
@@ -561,10 +575,10 @@ img {
         }
 
 .slider_item:nth-child(odd){
-            background-color:#FFD95E;
+            background-color:#00244E;
         }
 .slider_item:nth-child(even){
-            background-color:#FFD95E;
+            background-color:#00244E;
         }
 .showing{
             opacity: 1;
@@ -609,7 +623,7 @@ img {
 
 .pics p, .pics h3{
 	color:#000;
-	text-shadow: 1px 1px #ffd95e;
+	text-shadow: 1px 1px #00244E;
 }
 
 .slides img{
@@ -640,9 +654,9 @@ img {
 
 #update{
 	background:#000;
-	color:#FFD95E;
-	font-size: 18px;
-	font-weight: 800;
+	color:#D74145;
+	font-size: 20px;
+	font-weight: 1000;
 	padding:20px 10px;
 	text-align:center;
 }
@@ -650,6 +664,6 @@ img {
 @media (max-width: 800px) {
 	#update{
 		padding: 20px 5px;
-		font-size:16px;
+		font-size:20px;
 	}
 }

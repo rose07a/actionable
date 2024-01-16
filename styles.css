@@ -5,8 +5,9 @@
 }
 
 html {
-	font: normal 16px sans-serif;
-	color: #555;
+	font-family: 'Montserrat';
+	font-weight: 500;
+	color: #000;
 }
 
 ul,
@@ -53,11 +54,12 @@ hr {
 	background-color:#00244E;
 	border: 0;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 section h3.title {
 	text-transform: capitalize;
-	font: bold 32px "Quicksand", sans-serif;
+	font: bold 40px;
 	margin-bottom: 30px;
 }
 
@@ -90,10 +92,9 @@ header a{
 }
 
 header h2 {
-	font-family: "Quicksand", sans-serif;
 	color: #fff;
 	font-weight: 10000;
-	font-size:25px;
+	font-size: 30px;
 }
 
 header nav {
@@ -121,7 +122,7 @@ header img{
 	}
 
 	header h2 {
-		font-size: 25px;
+		font-size: 30px;
 	}
 
 	header nav li {
@@ -159,12 +160,12 @@ header img{
 }
 
 .hero h1 {
-	font: bold 60px "Open Sans", sans-serif;
+	font-size: 70px;
 	margin-bottom: 15px;
 }
 
 .hero h3 {
-	font: normal 28px "Open Sans", sans-serif;
+	font-size: 40px;
 	margin-bottom: 40px;
 }
 
@@ -179,6 +180,10 @@ header img{
 	margin-top: 0px;
 	animation: 1s slidefade 1s forwards;
 	width: 100%;
+}
+
+.hero-content-area{
+	z-index: 20;
 }
 
 .hero-content-area img{
@@ -209,11 +214,11 @@ header img{
 	}
 
 	.hero h1 {
-		font-size: 48px;
+		font-size: 60px;
 	}
 
 	.hero h3 {
-		font-size: 24px;
+		font-size: 40px;
 	}
 
 	.hero a.btn {
@@ -287,7 +292,7 @@ header img{
 /*footer***************************************************************/
 
 #location h1{
-    font-size:30px;
+    font-size: 60px;
     margin-bottom: 20px;
 }
 
@@ -299,7 +304,7 @@ header img{
 
 footer{
 	padding:0 20px;
-	background-color: #fff;
+	background-color: #00244E;
 	padding-top:20px;
 }
 
@@ -312,14 +317,14 @@ footer img{
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-    background-color: #fff;
-	color: #000;
+    background-color: #00244E;
+	color: #fff;
 	padding: 5px 0;
 }
 
 .footergrid div{
 	flex-basis: 30%;
-	background-color: #fff;
+	background-color: #00244E;
 	text-align:left;
 }
 
@@ -330,24 +335,24 @@ footer li{
 
 footer i {
    font-size:30px;
-   color:#000;
+   color:#fff;
 }
 
 footer p {
 	text-align: center;
 	padding: 20px;
-	color: #000;
+	color: #fff;
 }
 
 footer hr{
 	margin: 10px auto;
 	width:90%;
-	border: #000 solid 2px;
+	border: #fff solid 2px;
 }
 
 @media (max-width: 800px) {
     footer{
-    	text-align: left;
+    	text-align: center;
     }
 
 	.footergrid {
@@ -374,10 +379,14 @@ footer hr{
 	}
 
 	footer .toleft a{
-		margin-left:-170px;
+		margin: left -1px;
 	}
+
 } 
 
+footer a{
+   color:#fff;
+}
 
 
 
@@ -666,4 +675,104 @@ img {
 		padding: 20px 5px;
 		font-size:20px;
 	}
+}
+
+
+#lover img{
+	width: 500px;
+	height: auto;
+	margin:20px 0;
+	background-size:cover;
+	border-radius: 5%;
+}
+
+@media (max-width: 800px) {
+	#lover{
+		text-align: center;
+	}
+	#lover img{
+		width:95%;
+	}
+}
+
+
+section h3.title {
+	text-transform: capitalize;
+	font-size: 40px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+
+
+.verytop{
+	position: fixed;
+	top: -50px;
+	width: 100%;
+	display:block;
+	background:#000;
+	color:#ff000d;
+	text-align:center;
+	height:50px;
+	font-size:20px;
+	z-index:5;
+   }
+   
+   .verytop ul{
+	   display:flex;
+	   flex-direction: row;
+	   justify-content: space-around;
+	   padding-top:15px;
+   }
+   
+   .verytop a{
+	   padding: 10px;
+	   color:#ff000d;
+	   font-weight: 900;
+   }
+
+
+   .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.packages{
+	background-color:#fff;
+}
+
+.packages img{
+	width: 95%;
+	height: 350px;
+}
+
+.packages .grid li {
+	padding: 25px;
+	flex-basis: 50%;
+	text-align: center;
+}
+
+.grid div{
+	flex-basis: 35%;
+	text-align: center;
+}
+
+.packages .grid li h4 {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+@media (max-width: 800px) {
+	.packages .grid li {
+		flex-basis: 100%;
+		padding: 20px;
+	}
+
+	.grid div{
+		flex-basis: 90%;
+		margin-top: 25px;
+	}
+
 }

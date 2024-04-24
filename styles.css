@@ -59,7 +59,7 @@ hr {
 
 section h3.title {
 	text-transform: capitalize;
-	font: bold 40px;
+	font: bold 30px;
 	margin-bottom: 30px;
 }
 
@@ -122,7 +122,7 @@ header img{
 	}
 
 	header h2 {
-		font-size: 25px;
+		font-size: 20px;
 	}
 
 	header nav li {
@@ -206,7 +206,7 @@ header img{
 	}
 
 	.hero h3 {
-		font-size: 40px;
+		font-size: 25px;
 	}
 
 	.hero a.btn {
@@ -686,7 +686,7 @@ img {
 
 section h3.title {
 	text-transform: capitalize;
-	font-size: 40px;
+	font-size: 30px;
 	margin-bottom: 20px;
 	text-align: center;
 }

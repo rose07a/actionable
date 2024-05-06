@@ -790,6 +790,10 @@ section h3.title {
 	color:red;
 }
 
+.flyer{
+	text-align: center;
+}
+
 .flyer img{
 	width:450px;
 	text-align: center;

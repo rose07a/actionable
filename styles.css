@@ -703,7 +703,7 @@ section h3.title {
 	font-size: 20px;
 	font-weight: 1000;
 	text-align:center;
-	height:50px;
+	height:60px;
 	z-index:5;
    }
    
@@ -711,7 +711,7 @@ section h3.title {
 	   display:flex;
 	   flex-direction: row;
 	   justify-content: space-around;
-	   padding-top:15px;
+	   padding-top:10px;
    }
    
    .verytop a{

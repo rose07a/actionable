@@ -17,7 +17,7 @@ nav {
 
 a {
 	text-decoration: none;
-	opacity: 0.75;
+	opacity: 1;
 	color: #000;
 }
 
@@ -82,17 +82,17 @@ header {
 	/*position: absolute;*/
 	width: 100%;
 	padding: 20px 10px;
-	color: #fff;
-	background-color: #00244E;
+	color: #000;
+	background-color: #fff;
 }
 
 header a{
 	margin:0 10px;
-	color: #fff;
+	color: #000;
 }
 
 header h2 {
-	color: #fff;
+	color: #000;
 	font-weight: 10000;
 	font-size: 30px;
 }
@@ -108,8 +108,7 @@ header nav li {
 }
 
 header img{
-	width:20px;
-	height:20px;
+	width:270px;
 }
 
 @media (max-width: 800px) {
@@ -672,6 +671,7 @@ img {
 	margin:20px 0;
 	background-size:cover;
 	border-radius: 5%;
+	text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -725,27 +725,25 @@ section h3.title {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .packages{
 	background-color:#fff;
+	text-align: left;
 }
 
-.packages img{
-	width: 95%;
-	height: 350px;
-}
 
 .packages .grid li {
 	padding: 25px;
 	flex-basis: 50%;
-	text-align: center;
+	text-align: left;
 }
 
 .grid div{
 	flex-basis: 35%;
-	text-align: center;
+	text-align: left;
 }
 
 .packages .grid li h4 {
@@ -753,11 +751,16 @@ section h3.title {
 	margin: 20px 0;
 }
 
+.packages img{
+	width: 90%;
+	border-radius: 5%;
+}
+
 .aboutus h4{
 	font-size: 20px;
 	margin: 20px 0;
 	width:50%;
-	text-align: center;
+	text-align: left;
 }
 
 @media (max-width: 800px) {
@@ -779,4 +782,14 @@ section h3.title {
 
 .lightblue{
 	background-color: #f0f0f0;
+}
+
+
+
+.red{
+	color:red;
+}
+
+.flyer img{
+	width:450px;
 }

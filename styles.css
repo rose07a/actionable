@@ -711,7 +711,7 @@ section h3.title {
 	   display:flex;
 	   flex-direction: row;
 	   justify-content: space-around;
-	   padding-top:10px;
+	   padding-top: 15px;
    }
    
    .verytop a{
@@ -792,4 +792,13 @@ section h3.title {
 
 .flyer img{
 	width:450px;
+	text-align: center;
+}
+
+@media (max-width: 800px) {
+
+.flyer img{
+	width:90%;
+}
+
 }

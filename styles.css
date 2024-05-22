@@ -808,5 +808,70 @@ section h3.title {
 .flyer img{
 	width:90%;
 }
+}
 
+
+.rate h2{
+	margin: 20px;
+	text-align: center;
+   }
+   
+   .rate p{
+	   font-size: 18px;
+   }
+   
+   table, th, td {
+	width: 100%;
+	height: auto;
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin: 20px 0;
+	line-height: 20px;
+   }
+   
+   th, td{
+	   padding: 20px;
+   }
+   
+   .payment{
+	   margin: 20px;
+	   margin-top: 40px;
+   }
+   
+   .rate .method{
+	   margin:10px;
+	   line-height:30px;
+   }
+   
+   .rate td a{
+	   color: #000;
+	   text-decoration:underline;
+   }
+   
+   
+   .closed{
+	 padding:30px 30px;
+	 border: 2px solid #3EE924;
+   }
+   
+   .store img{
+	width:25%
+   }
+   
+   .gallery div{
+	   border-radius:10px;
+   }
+   
+   table{
+	   width:60%;
+   }
+   
+   @media (max-width: 800px) {
+	   table{
+		   width:100%;
+	   }
+   }
+   
+table caption{
+	padding-top:50px;
 }

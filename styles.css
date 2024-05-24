@@ -139,8 +139,8 @@ header img{
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	min-height: 100vh;
 	color: #fff;
+	height:500px;
 	background: #00244E;
 	background-position: 50% 50%;
 	z-index: -2;
@@ -148,14 +148,22 @@ header img{
 
 .hero .background-image {
 	position:absolute;
-	top:0;
-	left:0;
+	top:0%;
+	left:0%;
 	width: 100%;
 	height: auto;
 	background-size: cover;
 	background-position: 50% 50%;
 	z-index: -1;
     margin-bottom: 0px;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.hero img{
+	width:100%;
+	height:500px;
 }
 
 .hero h1 {
@@ -188,16 +196,15 @@ header img{
 
 @media (max-width: 800px) {
 	.hero {
-		min-height: 90vh;
+		height: 500px;
 	}
 
 	.hero .background-image{
-		background-position: 50% 50%;
+		background-position: 0% 0%;
 	}
 
 	.hero img{
-      width: auto;
-	  height: 400px;
+      height:300px;
 	}
 
 	.hero h1 {
@@ -538,66 +545,6 @@ img {
 	color: #00244E;
 }
 
-
-
-
-
-
-/*slider**************************************************************/
-
-
-#slider {
-            width: 100%;
-            position: absolute;
-            margin:0;
-        }
-
-.slider_item {
-            width: 100%;
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top:0;
-            z-index: 0;
-            overflow: hidden;
-            opacity: 0;
-            transition:all .5s ease-in-out;
-            transform: scale(0.9);
-        }
-.slider_item img {
-        	height: 100%;
-        }
-
-.slider_item:nth-child(odd){
-            background-color:#00244E;
-        }
-.slider_item:nth-child(even){
-            background-color:#00244E;
-        }
-.showing{
-            opacity: 1;
-            z-index: 1;
-            transform: none;
-        }
-
-@media (max-width: 1100px) {
-	.slider_item{
-		margin-top:50px;
-		height:525px;
-		background-position: center;
-        background-size: contain;
-
-	}
-
-	.slider_item img {
-        background-position: center;
-        background-size: contain;
-        }
-}
-
-
 .pics{
  background-image:url("./img/grass.jpg");
  background-repeat: no-repeat;
@@ -876,3 +823,144 @@ section h3.title {
 table caption{
 	padding-top:50px;
 }
+
+
+
+
+
+
+
+.hee {
+	position: relative;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	height: 550px;
+    background-color: #00244E;
+    z-index: -100;
+}
+
+.hee .back-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-size: cover;
+    background-color: #00244E;
+	z-index: -1;
+}
+
+.hee h1 {
+	font: bold 60px;
+	margin-bottom: 15px;
+}
+
+.hee h3 {
+	font: normal 28px;
+	margin-bottom: 40px;
+}
+
+.hee a.btn {
+	margin: 10px;
+	padding: 20px 46px;
+	background-color: #FFD95E;
+}
+
+
+@keyframes slidefade {
+	100% {
+		opacity: 1;
+		margin: 0;
+	}
+}
+
+@media (max-width: 1100px) {
+	.hee {
+		height: 500px;
+	}
+
+	.hee h1 {
+		font-size: 48px;
+	}
+
+	.hee h3 {
+		font-size: 24px;
+	}
+
+	.hee a.btn {
+		margin: 20px;
+		padding: 20px 20px;
+	}
+
+	.hee{
+		background-size: cover;
+		background-position:center;
+	}
+
+	.hee .hero-content-area {
+		top:40%;
+		left:20%;
+	}
+    .hee .hero-content-area img{
+		width:300px
+	}
+}
+
+
+/*slider**************************************************************/
+
+
+#slider {
+	height:550px;
+	position: relative;
+	margin:0;
+    padding-bottom: 20px;
+}
+
+.slider_item {
+	height: 450px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top:0;
+	width:100%;
+	z-index: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition:all .5s ease-in-out;
+	transform: scale(0.9);
+    padding-bottom: 20px;
+}
+.slider_item img {
+	height:100%;
+    padding-bottom: 20px;
+}
+
+.slider_item:nth-child(odd){
+	background-color:#00244E;
+}
+.slider_item:nth-child(even){
+	background-color:#00244E;
+}
+.showing{
+	opacity: 1;
+	z-index: 1;
+	transform: none;
+}
+
+@media (max-width: 1100px) {
+.slider_item{
+height:400px;
+background-position: center;
+background-size: contain;
+
+}
+
+.slider_item img {
+background-position: center;
+background-size: contain;
+}
+
+}
+
